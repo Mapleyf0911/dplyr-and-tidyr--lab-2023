@@ -109,8 +109,15 @@ grades |>
 ```
 ## Q6
 ```{r}
-grades |>
+long_grades <- grades |>
   pivot_longer(!Id & !Group)
+long_grades
+```
+## Q7
+```{r}
+long_grades |>
+  group_by(Id) |>
+  summarise(missed = sum(is.na(value)))
 ```
 
 
