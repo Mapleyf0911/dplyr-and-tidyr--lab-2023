@@ -76,5 +76,13 @@ spotify |>
 #| message: false
 grades <- vroom(here("data", "grades.csv"))
 ```
+## Q2
+```{r}
+grades |>
+  summarise(min = min(Exam, na.rm = TRUE),
+            max = max(Exam, na.rm = TRUE),
+            median = median(Exam, na.rm = TRUE),
+            mean = round(mean(Exam, na.rm = TRUE), 2))
+```
 
 
