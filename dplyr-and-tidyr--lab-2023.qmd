@@ -57,6 +57,17 @@ spotify |>
   arrange(-n) |>
   slice(1)
 ```
+## Q5
+```{r}
+spotify |>
+  distinct(title, .keep_all = TRUE) |>
+  group_by(`top genre`) |>
+  summarise(min = min(bpm),
+            max = max(bpm),
+            mean = mean(bpm),
+            median = median(bpm),
+            n = n())
+```
 
 
 
