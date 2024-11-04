@@ -84,5 +84,10 @@ grades |>
             median = median(Exam, na.rm = TRUE),
             mean = round(mean(Exam, na.rm = TRUE), 2))
 ```
+## Q3
+```{r}
+grades |>
+  filter(is.na(Exam))
+```
 
 
