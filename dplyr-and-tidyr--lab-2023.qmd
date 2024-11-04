@@ -142,5 +142,13 @@ long_grades |>
   group_by(Id) |>
   summarise(Missed = anyNA(value))
 ```
+## Q11
+```{r}
+long_grades |>
+  filter(str_starts(name, "MCQ")) |>
+  group_by(Group, Id) |>
+  summarise(Missed = anyNA(value)) |>
+  summarise(P_missed = sum(Missed)/n())
+```
 
 
