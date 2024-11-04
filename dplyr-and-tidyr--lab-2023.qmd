@@ -69,5 +69,12 @@ spotify |>
             n = n())
 ```
 
+# Exercise 2
+
+## Q1
+```{r}
+#| message: false
+grades <- vroom(here("data", "grades.csv"))
+```
 
 
