@@ -119,6 +119,13 @@ long_grades |>
   group_by(Id) |>
   summarise(missed = sum(is.na(value)))
 ```
+## Q8
+```{r}
+long_grades |>
+  filter(name == "Exam") |>
+  group_by(Group) |>
+  summarise(n = sum(is.na(value)))
+```
 
 
 
