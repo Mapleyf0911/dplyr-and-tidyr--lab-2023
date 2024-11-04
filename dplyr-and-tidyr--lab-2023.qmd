@@ -89,5 +89,17 @@ grades |>
 grades |>
   filter(is.na(Exam))
 ```
+## Q4
+```{r}
+grades |>
+  group_by(Group) |>
+  distinct(Id) |>
+  summarise(n = n())
+```
+```{r}
+grades %>%
+group_by(Group) %>%
+summarise(nb_students = n())
+```
 
 
