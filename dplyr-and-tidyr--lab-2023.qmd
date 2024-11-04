@@ -21,5 +21,26 @@ theme_set(theme_bw())
 #| message: false
 spotify <- vroom(here("data", "top-spotify-songs-from-20102019-by-year.csv"))
 ```
+## Q2
+Number of songs
+```{r}
+spotify |> 
+  distinct(title) |>
+  nrow()
+```
+
+Number of artists
+```{r}
+spotify |>
+  distinct(artist) |>
+  nrow()
+```
+
+Number of
+```{r}
+spotify |>
+  distinct(`top genre`) |>
+  nrow()
+```
 
 
