@@ -48,6 +48,15 @@ spotify |>
   group_by(year) |>
   summarise(n = n())
 ```
+## Q4
+```{r}
+spotify |>
+  group_by(artist) |>
+  distinct(title) |>
+  summarise(n = n()) |>
+  arrange(-n) |>
+  slice(1)
+```
 
 
 
