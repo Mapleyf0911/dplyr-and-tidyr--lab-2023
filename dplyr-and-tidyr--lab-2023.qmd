@@ -101,5 +101,12 @@ grades %>%
 group_by(Group) %>%
 summarise(nb_students = n())
 ```
+## Q5
+```{r}
+grades |>
+  group_by(Group) |>
+  summarise(missed = sum(is.na(Exam)))
+```
+
 
 
