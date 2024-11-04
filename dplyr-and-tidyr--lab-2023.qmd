@@ -126,6 +126,14 @@ long_grades |>
   group_by(Group) |>
   summarise(n = sum(is.na(value)))
 ```
+## Q9
+```{r}
+library(stringr)
+long_grades |>
+  filter(str_starts(name, "Online")) |>
+  group_by(Id) |>
+  summarise(missed = sum(is.na(value)))
+```
 
 
 
