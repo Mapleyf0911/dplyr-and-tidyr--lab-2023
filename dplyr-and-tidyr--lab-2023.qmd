@@ -107,6 +107,11 @@ grades |>
   group_by(Group) |>
   summarise(missed = sum(is.na(Exam)))
 ```
+## Q6
+```{r}
+grades |>
+  pivot_longer(!Id & !Group)
+```
 
 
 
