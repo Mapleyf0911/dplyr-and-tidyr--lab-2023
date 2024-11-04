@@ -36,11 +36,18 @@ spotify |>
   nrow()
 ```
 
-Number of
+Number of genres
 ```{r}
 spotify |>
   distinct(`top genre`) |>
   nrow()
 ```
+## Q3
+```{r}
+spotify |>
+  group_by(year) |>
+  summarise(n = n())
+```
+
 
 
