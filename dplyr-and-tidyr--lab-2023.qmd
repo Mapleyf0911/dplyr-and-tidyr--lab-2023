@@ -1,0 +1,17 @@
+---
+title: "dplyr-and-tidyr--lab-2023"
+author: "Yufeng JIANG"
+format: html
+---
+
+```{r}
+#| message: false
+here::i_am("dplyr-and-tidyr--lab-2023.Rproj")
+library(here)
+library(vroom)
+library(ggplot2)
+library(tidyr)
+library(dplyr)
+theme_set(theme_bw())
+```
+
