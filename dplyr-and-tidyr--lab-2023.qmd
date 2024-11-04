@@ -14,4 +14,12 @@ library(tidyr)
 library(dplyr)
 theme_set(theme_bw())
 ```
+# Exercise 1
+
+## Q1
+```{r}
+#| message: false
+spotify <- vroom(here("data", "top-spotify-songs-from-20102019-by-year.csv"))
+```
+
 
